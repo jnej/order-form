@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+      <script src="js/jquery-3.2.1.js"></script>
+      <script src="js/scripts.js"></script>
+      <title>order form</title>
+
+    </head>
+    <body>
+      <div class="container">
+        <h1>Order Form</h1>
+
+        <form id="orderForm">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input id="firstName" class="form-control" type="text"></input>
+          </div>
+          <div class="form-group">
+            <label for="surName">Surname</label>
+            <input id="surName" class="form-control" type="text"></input>
+          </div>
+          <div class="form-group">
+            <label for="houseNo">House Number</label>
+            <input id="houseNo" class="form-control" type="text"></input>
+          </div>
+          <div class="form-group">
+            <label for="street">Street</label>
+            <input id="street" class="form-control" type="text"></input>
+          </div>
+          <div class="form-group">
+            <label for="town">Town</label>
+            <input id="town" class="form-control" type="text"></input>
+          </div>
+          <div class="form-group">
+            <label for="county">County</label>
+            <input id="county" class="form-control" type="text"></input>
+          </div>
+          <div class="form-group">
+            <label for="postCode">Postcode</label>
+            <input id="postCode" class="form" type="text"></input>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+
+        <div class="receipt">
+          <h2>Receipt</h2>
+          <p>Thank you <span class="firstName"></span> <span class="surName"></span>, for purchasing:</p>
+          <div class="row">
+            <div class="col-md-2">
+              <ul>
+                <li>1 x plant pot</li>
+                <br>
+                <li>1 x garden gnome</li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <p>£5.99</p>
+              <p>£12.99</p>
+            </div>
+          </div>
+          <h4>Grand Total: £18.98</h4>
+          <button type="confirm" class="btn1">Confirm</button>
+        </div>
+
+        <div class="confirm">
+          <h2>Confirm Shipping</h2>
+          <h4>Please confirm Shipping Address</h4>
+          <p><span class="firstName"></span> <span class="surName"></span>,</p>
+          <p><span class="houseNo"></span> <span class="street"></span>,</p>
+          <p class="town"></p>
+          <p>County <Span class="county"></span>,</p>
+          <p class=postCode></p>
+          <button type="confirm" class="btn2">Confirm</button>
+        </div>
+
+      </div>
+    </body>
+  </html>
