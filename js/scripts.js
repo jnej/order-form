@@ -23,6 +23,10 @@ $(document).ready(function() {
     $(".confirm").show();
   })
 
+  $(".btn2").click(function() {
+    alert("Thank you for your purchase!");
+  })
+
     event.preventDefault();
   })
 })
